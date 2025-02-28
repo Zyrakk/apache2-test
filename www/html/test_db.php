@@ -1,9 +1,9 @@
 <?php
 // Parámetros de conexión (usar los mismos que definimos en docker-compose)
 $host = "db";            // Nombre del host (servicio) de la base de datos en Docker
-$user = "root";          // Usuario (aquí usamos root para la prueba)
-$password = "MiPassword123";  // Contraseña del root (según la establecimos en compose)
-$database = "prueba";    // Nombre de base de datos para probar (según la variable MYSQL_DATABASE)
+$user = "root";          // Usuario
+$password = "root";  // Contraseña del root
+$database = "prueba";    // Nombre de base de datos para probar
 
 // Intentar conectar
 $conn = mysqli_connect($host, $user, $password, $database);
@@ -12,6 +12,6 @@ $conn = mysqli_connect($host, $user, $password, $database);
 if (!$conn) {
     die("Error de conexión (" . mysqli_connect_errno() . "): " . mysqli_connect_error());
 }
-echo "Conexión exitosa a MariaDB usando mysqli!";
+echo "<h1>Conexión exitosa a MariaDB usando mysqli!</h1>";
 mysqli_close($conn);
 ?>

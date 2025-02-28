@@ -1,1 +1,2 @@
 htpasswd -cb .htpasswd ASIR 123456
+127.0.0.1   stefsec.com cv.stefsec.com blog.stefsec.com www.stefsec.com

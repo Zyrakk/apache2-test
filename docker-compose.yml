@@ -10,7 +10,7 @@ services:
       - ./www:/var/www           # Monta la carpeta con archivos web y configuraciones en /var/www
       - ./apache2/sites:/etc/apache2/sites-available   # Archivos de sitios virtuales
       - ./apache2/apache2.conf:/etc/apache2/apache2.conf:ro # Config global de Apache (solo lectura)
-    command: /bin/bash -c "mkdir -p /etc/apache2/logs && a2ensite cv-web.conf blog-web.conf owncloud-web.conf && apache2-foreground"
+    command: /bin/bash -c "mkdir -p /etc/apache2/logs && mkdir -p  && a2ensite cv-web.conf blog-web.conf owncloud-web.conf && apache2-foreground"
 
   db:
     image: mariadb:latest        # Servidor MariaDB/MySQL
