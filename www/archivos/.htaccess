@@ -1,0 +1,8 @@
+# Priorizar index-asir.php como archivo de índice en /archivos
+DirectoryIndex index-asir.php index.php index.html
+
+# Habilitar autenticación básica para /archivos
+AuthType Basic
+AuthName "Directorio protegido"
+AuthUserFile "/var/www/html/archivos/.htpasswd"
+Require valid-user
