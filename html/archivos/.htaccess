@@ -1,0 +1,6 @@
+DirectoryIndex index-asir.php
+
+AuthType Basic
+AuthName "Acceso restringido"
+AuthUserFile /var/www/html/archivos/.htpasswd
+Require valid-user
