@@ -1,3 +1,1 @@
-<?php
-echo "Estoy en CV";
-?>
+<h1>Pagina cv</h1>

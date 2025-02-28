@@ -1,3 +1,1 @@
-<?php
-echo "Estoy en blog";
-?>
+<h1>Pagina blog</h1>

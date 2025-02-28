@@ -1,3 +1,1 @@
-<?php
-echo "Estoy en index-asir";
-?>
+<h1>Index Asir</h1>
